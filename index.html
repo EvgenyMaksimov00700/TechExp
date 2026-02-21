@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0B3A8A" />
+    <title>Экспертиза и рецензирование — независимая оценка и заключения</title>
+    <meta
+      name="description"
+      content="Оценка и исследование промышленного оборудования, автотехническая экспертиза, обстоятельства ДТП, инженерно‑техническая экспертиза, рецензирование, контрактная экспертиза по ФЗ №44 РФ. Официальные заключения, прозрачные сроки, сопровождение."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=PT+Serif:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#content">Перейти к содержанию</a>
+
+    <header class="header" data-elevate>
+      <div class="wrap header__inner">
+        <a class="brand" href="#top" aria-label="На главную">
+          <span class="brand__mark" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path
+                d="M14 2.4l9.9 5.7v11.8L14 25.6 4.1 19.9V8.1L14 2.4Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+              <path
+                d="M8.2 14.1h11.6M11 9.7l3 4.4 3-4.4"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+          <span class="brand__text">
+            <span class="brand__name">Вектор Экспертиза</span>
+            <span class="brand__tag">независимые заключения</span>
+          </span>
+        </a>
+
+        <button class="navBtn" type="button" aria-controls="nav" aria-expanded="false">
+          <span class="navBtn__line"></span>
+          <span class="navBtn__line"></span>
+          <span class="navBtn__line"></span>
+          <span class="srOnly">Меню</span>
+        </button>
+
+        <nav class="nav" id="nav" aria-label="Основная навигация">
+          <a class="nav__link" href="#services">Услуги</a>
+          <a class="nav__link" href="#advantages">Плюсы</a>
+          <a class="nav__link" href="#process">Как работаем</a>
+          <a class="nav__link" href="#faq">FAQ</a>
+          <a class="nav__link" href="#contacts">Контакты</a>
+          <button class="btn btn--primary nav__cta" type="button" data-open-modal>
+            Записаться
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero" id="top">
+        <div class="wrap hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow">Экспертные заключения • РФ</p>
+            <h1 class="h1">
+              Экспертиза и рецензирование, которые выдерживают проверку документами и логикой
+            </h1>
+            <p class="lead">
+              Промышленное оборудование, автоэкспертиза и обстоятельства ДТП, инженерно‑технические
+              исследования, контрактная экспертиза по ФЗ №44 РФ.
+            </p>
+
+            <div class="hero__cta">
+              <button class="btn btn--primary" type="button" data-open-modal>Заказать экспертизу</button>
+              <a class="btn btn--ghost" href="#services">Список услуг</a>
+            </div>
+
+            <div class="trust">
+              <div class="trust__item">
+                <span class="trust__kpi">1–5</span>
+                <span class="trust__txt">рабочих дней на заключение (в зависимости от задачи)</span>
+              </div>
+              <div class="trust__item">
+                <span class="trust__kpi">0%</span>
+                <span class="trust__txt">воды: только факты, расчёты, фотофиксация</span>
+              </div>
+              <div class="trust__item">
+                <span class="trust__kpi">44‑ФЗ</span>
+                <span class="trust__txt">контрактная экспертиза и комплект актов</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__panel" aria-label="Ключевые направления">
+            <div class="panel">
+              <div class="panel__header">
+                <h2 class="panel__title">Ключевые направления</h2>
+                <p class="panel__sub">Выберите задачу — подберём формат экспертизы.</p>
+              </div>
+
+              <div class="chips" role="list">
+                <button class="chip" type="button" data-chip="industrial">Промоборудование</button>
+                <button class="chip" type="button" data-chip="auto">Автотехника</button>
+                <button class="chip" type="button" data-chip="dtp">Обстоятельства ДТП</button>
+                <button class="chip" type="button" data-chip="eng">Инженерно‑техническая</button>
+                <button class="chip" type="button" data-chip="review">Рецензирование</button>
+                <button class="chip" type="button" data-chip="44fz">Контрактная (44‑ФЗ)</button>
+              </div>
+
+              <div class="panel__body" aria-live="polite">
+                <div class="panelCard" data-card>
+                  <div class="panelCard__icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M3.5 9.2 10 3l6.5 6.2v7.3a.9.9 0 0 1-.9.9H4.4a.9.9 0 0 1-.9-.9V9.2Z"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M7.2 17.3v-4.7c0-.6.5-1.1 1.1-1.1h3.4c.6 0 1.1.5 1.1 1.1v4.7"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <div class="panelCard__text">
+                    <p class="panelCard__title" data-card-title>Выберите направление</p>
+                    <p class="panelCard__desc" data-card-desc>
+                      Мы уточним исходные документы и предложим план исследования и сроки.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="panel__actions">
+                  <button class="btn btn--primary btn--wide" type="button" data-open-modal>
+                    Записаться на консультацию
+                  </button>
+                  <a class="miniLink" href="#contacts">Показать контакты</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero__ribbon" aria-hidden="true">
+              <span>доказательно</span>
+              <span>точно</span>
+              <span>в срок</span>
+              <span>конфиденциально</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="wrap">
+          <div class="section__head">
+            <h2 class="h2">Услуги</h2>
+            <p class="muted">
+              Каждая услуга — это чёткий результат: заключение, акт, расчёты, фото/видео фиксация,
+              пояснительная часть и перечень нормативных оснований.
+            </p>
+          </div>
+
+          <div class="cards">
+            <article class="card">
+              <h3 class="h3">Оценка и исследование промышленного оборудования</h3>
+              <p class="card__p">
+                Диагностика состояния, оценка причин отказов и исследование причин инцидентов, проверка
+                соответствия ТЗ/паспортам, расчёты и выводы, пригодные для претензий/суда.
+              </p>
+              <div class="card__meta">
+                <span class="pill">производство</span>
+                <span class="pill">дефекты/износ</span>
+                <span class="pill">соответствие</span>
+              </div>
+              <button class="btn btn--primary" type="button" data-open-modal data-service="Промышленное оборудование">
+                Заказать
+              </button>
+            </article>
+
+            <article class="card">
+              <h3 class="h3">Автотехническая экспертиза</h3>
+              <p class="card__p">
+                Повреждения, механизм их образования, соответствие заявленным обстоятельствам,
+                оценка стоимости восстановительного ремонта, проверка расчётов, анализ документов
+                и фотоматериалов.
+              </p>
+              <div class="card__meta">
+                <span class="pill">ТС</span>
+                <span class="pill">ущерб</span>
+                <span class="pill">методики</span>
+              </div>
+              <button class="btn btn--primary" type="button" data-open-modal data-service="Автотехническая экспертиза">
+                Записаться
+              </button>
+            </article>
+
+            <article class="card">
+              <h3 class="h3">Обстоятельства ДТП</h3>
+              <p class="card__p">
+                Анализ траекторий, скоростей, видимости, дорожной обстановки, причинно‑следственной
+                связи и альтернативных сценариев.
+              </p>
+              <div class="card__meta">
+                <span class="pill">схемы</span>
+                <span class="pill">расчёты</span>
+                <span class="pill">заключение</span>
+              </div>
+              <button class="btn btn--primary" type="button" data-open-modal data-service="Обстоятельства ДТП">
+                Заказать
+              </button>
+            </article>
+
+            <article class="card">
+              <h3 class="h3">Инженерно‑техническая экспертиза</h3>
+              <p class="card__p">
+                Исследование причин и инцидентов в промышленности, строительстве и быту: конструктивные
+                решения, нагрузки, материалы, эксплуатационные факторы. Аккуратно и доказательно.
+              </p>
+              <div class="card__meta">
+                <span class="pill">инженерия</span>
+                <span class="pill">материалы</span>
+                <span class="pill">нормы</span>
+              </div>
+              <button class="btn btn--primary" type="button" data-open-modal data-service="Инженерно‑техническая экспертиза">
+                Записаться
+              </button>
+            </article>
+
+            <article class="card card--accent">
+              <h3 class="h3">Рецензирование экспертных заключений</h3>
+              <p class="card__p">
+                Проверяем логику, методики, исходные данные, соответствие нормативам и выявляем
+                ошибки, которые меняют выводы. Срок исполнения: от 5 до 30 рабочих дней
+                (в зависимости от сложности и задач).
+              </p>
+              <div class="card__meta">
+                <span class="pill pill--accent">контр‑проверка</span>
+                <span class="pill pill--accent">ошибки</span>
+                <span class="pill pill--accent">обоснование</span>
+              </div>
+              <button class="btn btn--primary" type="button" data-open-modal data-service="Рецензирование">
+                Заказать
+              </button>
+            </article>
+
+            <article class="card">
+              <h3 class="h3">Контрактная экспертиза по ФЗ №44 РФ</h3>
+              <p class="card__p">
+                Приёмка результатов, подтверждение объёмов/качества, оформление актов и заключения
+                для заказчика. Чётко по регламенту.
+              </p>
+              <div class="card__meta">
+                <span class="pill">44‑ФЗ</span>
+                <span class="pill">акты</span>
+                <span class="pill">приёмка</span>
+              </div>
+              <button class="btn btn--primary" type="button" data-open-modal data-service="Контрактная экспертиза 44‑ФЗ">
+                Купить
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="advantages">
+        <div class="wrap">
+          <div class="section__head">
+            <h2 class="h2">Основные плюсы</h2>
+            <p class="muted">
+              Выше перечислены направления работ — ниже то, что вы получаете на выходе в каждом из них.
+            </p>
+          </div>
+
+          <div class="grid">
+            <div class="adv">
+              <div class="adv__icon" aria-hidden="true">01</div>
+              <h3 class="h3">Проверяемость</h3>
+              <p class="muted">
+                Выводы привязаны к исходным данным, методикам и нормативам. Любой пункт можно
+                воспроизвести и проверить.
+              </p>
+            </div>
+            <div class="adv">
+              <div class="adv__icon" aria-hidden="true">02</div>
+              <h3 class="h3">Доказательная база</h3>
+              <p class="muted">
+                Фотофиксация, расчёты, таблицы, ссылки на стандарты — без “мнений”, только факты и логика.
+              </p>
+            </div>
+            <div class="adv">
+              <div class="adv__icon" aria-hidden="true">03</div>
+              <h3 class="h3">Сроки и прозрачность</h3>
+              <p class="muted">
+                Фиксируем этапы, согласуем перечень документов и заранее называем срок и состав результата.
+              </p>
+            </div>
+            <div class="adv">
+              <div class="adv__icon" aria-hidden="true">04</div>
+              <h3 class="h3">Удобная подача</h3>
+              <p class="muted">
+                Заключение читается “сверху вниз”: краткое резюме → факты → методика → расчёты → вывод.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="process">
+        <div class="wrap">
+          <div class="section__head">
+            <h2 class="h2">Как мы работаем</h2>
+            <p class="muted">Композиция простая: запрос → данные → исследование → заключение → поддержка.</p>
+          </div>
+
+          <ol class="steps">
+            <li class="step">
+              <span class="step__n">1</span>
+              <div class="step__body">
+                <h3 class="h3">Уточняем задачу</h3>
+                <p class="muted">Формулируем вопросы эксперту, перечень документов и формат результата.</p>
+              </div>
+            </li>
+            <li class="step">
+              <span class="step__n">2</span>
+              <div class="step__body">
+                <h3 class="h3">Собираем исходные данные</h3>
+                <p class="muted">Документы, фото/видео, осмотр, замеры — фиксируем всё, что влияет на вывод.</p>
+              </div>
+            </li>
+            <li class="step">
+              <span class="step__n">3</span>
+              <div class="step__body">
+                <h3 class="h3">Проводим исследование</h3>
+                <p class="muted">Методики, расчёты, сопоставления и проверка гипотез с привязкой к нормам.</p>
+              </div>
+            </li>
+            <li class="step">
+              <span class="step__n">4</span>
+              <div class="step__body">
+                <h3 class="h3">Выдаём заключение</h3>
+                <p class="muted">Понятная структура, приложения, доказательная база и готовность отвечать на вопросы.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="ctaBar">
+            <div class="ctaBar__text">
+              <p class="ctaBar__title">Нужна консультация по вашему кейсу?</p>
+              <p class="muted">Оставьте контакты — ответим и предложим оптимальный формат экспертизы.</p>
+            </div>
+            <button class="btn btn--primary" type="button" data-open-modal>Записаться</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="faq">
+        <div class="wrap">
+          <div class="section__head">
+            <h2 class="h2">FAQ</h2>
+            <p class="muted">Самые частые вопросы — кратко и по делу.</p>
+          </div>
+
+          <div class="faq">
+            <details class="qa">
+              <summary>Какие документы нужны для старта?</summary>
+              <div class="qa__body">
+                <p class="muted">
+                  Минимально: описание ситуации, имеющиеся акты/договоры/фото. Дальше мы дадим список,
+                  который зависит от услуги и цели (претензия, суд, приёмка по 44‑ФЗ и т.д.).
+                </p>
+              </div>
+            </details>
+            <details class="qa">
+              <summary>Можно ли сделать экспертизу по материалам без выезда?</summary>
+              <div class="qa__body">
+                <p class="muted">
+                  Да, во многих задачах достаточно документов и фотоматериалов. Если требуется осмотр
+                  или замеры — предложим выезд и согласуем дату.
+                </p>
+              </div>
+            </details>
+            <details class="qa">
+              <summary>Рецензия — это “спор” с экспертом?</summary>
+              <div class="qa__body">
+                <p class="muted">
+                  Это проверка качества заключения: методики, исходные данные, логика вывода, ссылки на
+                  нормы. Итог — перечень существенных недостатков и аргументация.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contacts">
+        <div class="wrap contacts">
+          <div class="contacts__info">
+            <h2 class="h2">Контакты</h2>
+            <p class="muted">
+              Заполните форму — мы уточним задачу и вернёмся с перечнем документов, сроками и стоимостью.
+            </p>
+            <div class="contactList">
+              <div class="contactList__row">
+                <span class="contactList__k">Телефон</span>
+                <a class="contactList__v" href="tel:+79033443058">+7 903 344‑30‑58</a>
+              </div>
+              <div class="contactList__row">
+                <span class="contactList__k">Email</span>
+                <a class="contactList__v" href="mailto:info@vector-expert.ru">info@vector-expert.ru</a>
+              </div>
+              <div class="contactList__row">
+                <span class="contactList__k">Адрес</span>
+                <span class="contactList__v">г. Казань, ул. Г.Тукая 125, корпус 2, оф.37</span>
+              </div>
+              <div class="contactList__row">
+                <span class="contactList__k">График</span>
+                <span class="contactList__v">Пн–Пт, 09:00–18:00</span>
+              </div>
+            </div>
+
+            <div class="note">
+              <p class="note__title">Конфиденциальность</p>
+              <p class="muted">
+                Материалы клиента используются только для подготовки заключения. Передача третьим лицам
+                — только по согласованию.
+              </p>
+            </div>
+          </div>
+
+          <form class="form" id="leadForm">
+            <div class="form__grid">
+              <label class="field">
+                <span class="field__label">Имя</span>
+                <input class="field__control" name="name" autocomplete="name" placeholder="Как к вам обращаться" required />
+              </label>
+              <label class="field">
+                <span class="field__label">Телефон</span>
+                <input
+                  class="field__control"
+                  name="phone"
+                  inputmode="tel"
+                  autocomplete="tel"
+                  placeholder="+7 903 344‑30‑58"
+                  required
+                />
+              </label>
+              <label class="field field--full">
+                <span class="field__label">Услуга</span>
+                <select class="field__control" name="service" required>
+                  <option value="" selected disabled>Выберите направление</option>
+                  <option>Оценка и исследование промышленного оборудования</option>
+                  <option>Автотехническая экспертиза</option>
+                  <option>Обстоятельства ДТП</option>
+                  <option>Инженерно‑техническая экспертиза</option>
+                  <option>Рецензирование</option>
+                  <option>Контрактная экспертиза по ФЗ №44 РФ</option>
+                </select>
+              </label>
+              <label class="field field--full">
+                <span class="field__label">Комментарий</span>
+                <textarea class="field__control" name="message" rows="4" placeholder="Кратко опишите задачу"></textarea>
+              </label>
+              <label class="check field--full">
+                <input class="check__box" type="checkbox" required />
+                <span class="check__text">Согласен(на) на обработку персональных данных для обратной связи.</span>
+              </label>
+            </div>
+            <button class="btn btn--primary btn--wide" type="submit">Отправить заявку</button>
+            <p class="form__hint muted">Кнопка рабочая: отправка имитируется и сохраняется локально.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer__inner">
+        <div class="footer__left">
+          <div class="footer__brand">
+            <span class="brand__name">Вектор Экспертиза</span>
+            <span class="brand__tag">экспертиза • рецензирование • 44‑ФЗ</span>
+          </div>
+          <p class="muted">
+            Информация на сайте носит ознакомительный характер. Итоговые сроки и стоимость зависят от
+            исходных данных и целей исследования.
+          </p>
+        </div>
+        <div class="footer__right">
+          <a class="miniLink" href="#top">Наверх</a>
+          <button class="btn btn--primary" type="button" data-open-modal>Заказать</button>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="modal" id="modal">
+      <form class="modal__card" id="modalForm">
+        <div class="modal__head">
+          <p class="modal__title">Запись / заказ</p>
+          <button class="iconBtn" type="button" data-close-modal aria-label="Закрыть">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <p class="muted modal__desc" id="modalDesc">
+          Оставьте контакты — мы уточним задачу и предложим формат экспертизы.
+        </p>
+
+        <div class="modal__grid">
+          <label class="field">
+            <span class="field__label">Имя</span>
+            <input class="field__control" name="name" autocomplete="name" required />
+          </label>
+          <label class="field">
+            <span class="field__label">Телефон</span>
+            <input class="field__control" name="phone" inputmode="tel" autocomplete="tel" required />
+          </label>
+          <label class="field field--full">
+            <span class="field__label">Услуга</span>
+            <input class="field__control" name="service" id="modalService" placeholder="Например: обстоятельства ДТП" />
+          </label>
+          <label class="field field--full">
+            <span class="field__label">Комментарий</span>
+            <textarea class="field__control" name="message" rows="3" placeholder="Что нужно уточнить?"></textarea>
+          </label>
+          <label class="check field--full">
+            <input class="check__box" type="checkbox" required />
+            <span class="check__text">Согласен(на) на обработку персональных данных.</span>
+          </label>
+        </div>
+
+        <div class="modal__actions">
+          <button class="btn btn--primary btn--wide" type="submit">Отправить</button>
+          <button class="btn btn--ghost btn--wide" type="button" data-close-modal>Позже</button>
+        </div>
+        <p class="muted" style="margin: 0.6rem 0 0">Отправка имитируется и сохраняется локально.</p>
+      </form>
+    </dialog>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
