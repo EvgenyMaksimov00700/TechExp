@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0B3A8A" />
+    <title>Заявка отправлена — Вектор Экспертиза</title>
+    <meta name="description" content="Ваш запрос принят. Мы свяжемся с вами в ближайшее время." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=PT+Serif:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#content">Перейти к содержанию</a>
+
+    <header class="header" data-elevate>
+      <div class="wrap header__inner">
+        <a class="brand" href="./index.html" aria-label="На главную">
+          <span class="brand__mark" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path
+                d="M14 2.4l9.9 5.7v11.8L14 25.6 4.1 19.9V8.1L14 2.4Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+              <path
+                d="M8.2 14.1h11.6M11 9.7l3 4.4 3-4.4"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+          <span class="brand__text">
+            <span class="brand__name">Вектор Экспертиза</span>
+            <span class="brand__tag">независимые заключения</span>
+          </span>
+        </a>
+
+        <button class="navBtn" type="button" aria-controls="nav" aria-expanded="false">
+          <span class="navBtn__line"></span>
+          <span class="navBtn__line"></span>
+          <span class="navBtn__line"></span>
+          <span class="srOnly">Меню</span>
+        </button>
+
+        <nav class="nav" id="nav" aria-label="Основная навигация">
+          <a class="nav__link" href="./index.html#services">Услуги</a>
+          <a class="nav__link" href="./index.html#contacts">Контакты</a>
+          <a
+            class="btn btn--primary nav__cta"
+            href="https://max.ru/u/f9LHodD0cOIndXg-opA3IhBJk3wFGLMy-SzFg7PAIE5BJ5QMOolScjlD2fs"
+            target="_blank"
+            rel="noopener"
+          >В Max</a>
+          <a
+            class="btn btn--ghost nav__cta"
+            href="https://t.me/+79178727224"
+            target="_blank"
+            rel="noopener"
+          >В Telegram</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" class="section">
+      <div class="wrap" style="max-width: 560px; margin-top: 8vh;">
+        <div class="modal__card" style="margin: 0;">
+          <h1 class="h2" style="margin: 0 0 12px;">Спасибо!</h1>
+          <p class="muted" style="margin: 0 0 20px;">
+            Ваш запрос отправлен. Мы свяжемся с вами в ближайшее время по указанному телефону или почте.
+          </p>
+          <a href="./index.html" class="btn btn--primary">Вернуться на главную</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer__inner">
+        <div class="footer__left">
+          <div class="footer__brand">
+            <span class="brand__name">Вектор Экспертиза</span>
+            <span class="brand__tag">экспертиза • рецензирование • 44‑ФЗ</span>
+          </div>
+          <p class="muted">
+            Информация на сайте носит ознакомительный характер.
+          </p>
+        </div>
+        <div class="footer__right">
+          <a class="miniLink" href="./index.html">На главную</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

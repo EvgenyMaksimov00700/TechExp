@@ -210,9 +210,6 @@
                 <span class="pill">дефекты/износ</span>
                 <span class="pill">соответствие</span>
               </div>
-              <button class="btn btn--primary" type="button" data-open-modal data-service="Промышленное оборудование">
-                Заказать
-              </button>
             </article>
 
             <article class="card">
@@ -227,18 +224,6 @@
                 <span class="pill">ущерб</span>
                 <span class="pill">методики</span>
               </div>
-              <a
-                class="btn btn--primary"
-                href="https://max.ru/u/f9LHodD0cOIndXg-opA3IhBJk3wFGLMy-SzFg7PAIE5BJ5QMOolScjlD2fs"
-                target="_blank"
-                rel="noopener"
-              >В Max</a>
-              <a
-                class="btn btn--ghost"
-                href="https://t.me/+79178727224"
-                target="_blank"
-                rel="noopener"
-              >Telegram</a>
             </article>
 
             <article class="card">
@@ -252,9 +237,6 @@
                 <span class="pill">расчёты</span>
                 <span class="pill">заключение</span>
               </div>
-              <button class="btn btn--primary" type="button" data-open-modal data-service="Обстоятельства ДТП">
-                Заказать
-              </button>
             </article>
 
             <article class="card">
@@ -268,18 +250,6 @@
                 <span class="pill">материалы</span>
                 <span class="pill">нормы</span>
               </div>
-              <a
-                class="btn btn--primary"
-                href="https://max.ru/u/f9LHodD0cOIndXg-opA3IhBJk3wFGLMy-SzFg7PAIE5BJ5QMOolScjlD2fs"
-                target="_blank"
-                rel="noopener"
-              >В Max</a>
-              <a
-                class="btn btn--ghost"
-                href="https://t.me/+79178727224"
-                target="_blank"
-                rel="noopener"
-              >Telegram</a>
             </article>
 
             <article class="card card--accent">
@@ -294,9 +264,6 @@
                 <span class="pill pill--accent">ошибки</span>
                 <span class="pill pill--accent">обоснование</span>
               </div>
-              <button class="btn btn--primary" type="button" data-open-modal data-service="Рецензирование">
-                Заказать
-              </button>
             </article>
 
             <article class="card">
@@ -310,9 +277,6 @@
                 <span class="pill">акты</span>
                 <span class="pill">приёмка</span>
               </div>
-              <button class="btn btn--primary" type="button" data-open-modal data-service="Контрактная экспертиза 44‑ФЗ">
-                Купить
-              </button>
             </article>
           </div>
         </div>
@@ -502,9 +466,74 @@
               </p>
             </div>
           </div>
+          <div class="contacts__form">
+            <h2 class="h2">Оставить заявку</h2>
+            <p class="muted" style="margin-bottom: 14px;">Оставьте контакты — перезвоним и уточним задачу.</p>
+            <form class="form js-lead-form" action="https://formsubmit.co/ajax/info@vector-expert.ru" method="POST">
+              <input type="hidden" name="_subject" value="Заявка с сайта Вектор Экспертиза">
+              <div class="form__grid">
+                <div class="field">
+                  <label class="field__label" for="form-name-bottom">Имя</label>
+                  <input type="text" class="field__control" id="form-name-bottom" name="Имя" autocomplete="name" required>
+                </div>
+                <div class="field">
+                  <label class="field__label" for="form-phone-bottom">Телефон</label>
+                  <input type="tel" class="field__control" id="form-phone-bottom" name="Телефон" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
+                </div>
+                <div class="field field--full">
+                  <label class="field__label" for="form-email-bottom">Email</label>
+                  <input type="email" class="field__control" id="form-email-bottom" name="Email" autocomplete="email">
+                </div>
+                <div class="field field--full">
+                  <label class="field__label" for="form-message-bottom">Сообщение</label>
+                  <textarea class="field__control" id="form-message-bottom" name="Сообщение" placeholder="Кратко опишите задачу (необязательно)"></textarea>
+                </div>
+              </div>
+              <div class="modal__actions">
+                <button type="submit" class="btn btn--primary btn--wide">Отправить запрос</button>
+                <p class="form__consent muted">Отправив запрос, вы даёте согласие на обработку персональных данных.</p>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </main>
+
+    <dialog class="modal" id="request-modal" aria-labelledby="modal-title" aria-describedby="modal-desc">
+      <div class="modal__card">
+        <div class="modal__head">
+          <h2 class="modal__title" id="modal-title">Заявка на экспертизу</h2>
+          <button type="button" class="iconBtn modal__close" aria-label="Закрыть" data-close-modal>×</button>
+        </div>
+        <p class="modal__desc muted" id="modal-desc">Оставьте контакты — перезвоним и уточним задачу.</p>
+        <form id="request-form" class="form js-lead-form" action="https://formsubmit.co/ajax/info@vector-expert.ru" method="POST">
+          <input type="hidden" name="_subject" value="Заявка с сайта Вектор Экспертиза">
+          <input type="hidden" name="Услуга" id="form-service" value="">
+          <div class="form__grid">
+            <div class="field">
+              <label class="field__label" for="form-name">Имя</label>
+              <input type="text" class="field__control" id="form-name" name="Имя" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label class="field__label" for="form-phone">Телефон</label>
+              <input type="tel" class="field__control" id="form-phone" name="Телефон" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
+            </div>
+            <div class="field field--full">
+              <label class="field__label" for="form-email">Email</label>
+              <input type="email" class="field__control" id="form-email" name="Email" autocomplete="email">
+            </div>
+            <div class="field field--full">
+              <label class="field__label" for="form-message">Сообщение</label>
+              <textarea class="field__control" id="form-message" name="Сообщение" placeholder="Кратко опишите задачу (необязательно)"></textarea>
+            </div>
+          </div>
+          <div class="modal__actions">
+            <button type="submit" class="btn btn--primary btn--wide">Отправить запрос</button>
+            <p class="form__consent muted">Отправив запрос, вы даёте согласие на обработку персональных данных.</p>
+          </div>
+        </form>
+      </div>
+    </dialog>
 
     <footer class="footer">
       <div class="wrap footer__inner">

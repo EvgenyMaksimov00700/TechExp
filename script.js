@@ -76,3 +76,72 @@ chips.forEach((c) => {
   c.addEventListener('click', () => selectChip(String(c.dataset.chip || '')));
 });
 
+/* Request modal */
+const requestModal = document.getElementById('request-modal');
+const formService = document.getElementById('form-service');
+
+function openRequestModal(service) {
+  if (!requestModal) return;
+  if (typeof setNav === 'function') setNav(false);
+  if (formService) formService.value = service || '';
+  requestModal.showModal();
+}
+
+function closeRequestModal() {
+  if (requestModal) requestModal.close();
+}
+
+document.querySelectorAll('[data-open-modal]').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const service = btn.getAttribute('data-service') || '';
+    openRequestModal(service);
+  });
+});
+
+requestModal?.addEventListener('click', (e) => {
+  if (e.target === requestModal) closeRequestModal();
+});
+
+document.querySelectorAll('[data-close-modal]').forEach((btn) => {
+  btn.addEventListener('click', closeRequestModal);
+});
+
+requestModal?.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeRequestModal();
+});
+
+function handleLeadSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const originalText = submitBtn?.textContent;
+  if (submitBtn) {
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Отправка…';
+  }
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { Accept: 'application/json' },
+  })
+    .then((res) => res.json().catch(() => ({})))
+    .then((data) => {
+      if (data.success === 'true' || data.success === true) {
+        window.location.href = 'thank-you.html';
+        return;
+      }
+      alert(data.message || data.error || 'Не удалось отправить. Попробуйте позже или напишите нам в мессенджер.');
+    })
+    .catch(() => alert('Ошибка сети. Попробуйте позже или напишите нам в мессенджер.'))
+    .finally(() => {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+      }
+    });
+}
+
+document.querySelectorAll('.js-lead-form').forEach((form) => {
+  form.addEventListener('submit', handleLeadSubmit);
+});
+
